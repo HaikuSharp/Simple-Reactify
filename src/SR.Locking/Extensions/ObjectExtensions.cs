@@ -1,4 +1,6 @@
-﻿namespace SR.Locking.Extensions;
+﻿using SR.Abstraction;
+
+namespace SR.Locking.Extensions;
 
 public static class ObjectExtensions
 {

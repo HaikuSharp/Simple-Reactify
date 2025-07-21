@@ -1,6 +1,6 @@
 ﻿namespace SR.Observing.Abstraction;
 
-public interface IHub<TArguments>
+public interface IHub<in TArguments>
 {
     IPublisher<TArguments> Publish();
 }

@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SR.Abstraction;
 
 namespace SR.Locking.Extensions;
-internal class PropertyExtensions
+
+public static class PropertyExtensions
 {
+    public static LockableWrapProperty<T> AsLockable<T>(this IProperty<T> obj) => new(obj);
 }

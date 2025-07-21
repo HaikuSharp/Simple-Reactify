@@ -1,3 +1,3 @@
 ﻿namespace SR.Observing.Abstraction;
 
-public interface IObserver<TArguments> : IReactivable<TArguments>;
+public interface IObserver<in TArguments> : IReactivable<TArguments>;

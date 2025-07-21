@@ -13,7 +13,7 @@ public static class OverridableExtensions
 
     public static Revert<T> RevertWithScope<T>(this IOverridable<T> overridable, object key)
     {
-        var getter = overridable.GetGetter(key);
+        var getter = overridable.GetOverrideGetter(key);
         overridable.Revert(key);
         return new(overridable, key, getter);
     }

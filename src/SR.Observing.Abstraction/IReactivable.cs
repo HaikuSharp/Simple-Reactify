@@ -1,6 +1,6 @@
 ﻿namespace SR.Observing.Abstraction;
 
-public interface IReactivable<TArguments>
+public interface IReactivable<in TArguments>
 {
     void Reactive(TArguments arguments);
 }

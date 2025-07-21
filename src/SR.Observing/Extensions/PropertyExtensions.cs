@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SR.Abstraction;
 
 namespace SR.Observing.Extensions;
-internal class PropertyExtensions
+
+public static class PropertyExtensions
 {
+    public static ObservableWrapProperty<T> AsObservable<T>(this IProperty<T> obj) => new(obj);
 }

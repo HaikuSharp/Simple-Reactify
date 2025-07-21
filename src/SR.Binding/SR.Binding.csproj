@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<ItemGroup>
+		<ProjectReference Include="..\SR.Abstraction\SR.Abstraction.csproj" />
 		<ProjectReference Include="..\SR.Binding.Abstraction\SR.Binding.Abstraction.csproj" />
 	</ItemGroup>
 

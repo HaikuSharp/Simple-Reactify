@@ -1,4 +1,6 @@
-﻿namespace SR.Observing.Extensions;
+﻿using SR.Abstraction;
+
+namespace SR.Observing.Extensions;
 
 public static class ObjectExtensions
 {

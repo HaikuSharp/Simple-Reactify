@@ -1,6 +1,6 @@
 ﻿namespace SR.Observing.Abstraction;
 
-public interface INotifiable<TArguments>
+public interface INotifiable<in TArguments>
 {
     void Notify(TArguments arguments);
 }

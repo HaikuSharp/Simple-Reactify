@@ -1,4 +1,4 @@
-﻿using SR.Overriding;
+﻿using SR.Abstraction;
 
 namespace SR.Overriding.Extensions;
 
