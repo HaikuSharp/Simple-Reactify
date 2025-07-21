@@ -16,7 +16,7 @@
 	<PropertyGroup>
 		<PackageId>$(MSBuildProjectName)</PackageId>
 		<Title>$(MSBuildProjectName)</Title>
-		<Description>TODO.</Description>
+		<Description>A modular .NET library for observable, lockable, and defaultable properties with hierarchical overrides, reactive updates, and thread-safe access patterns.</Description>
 		<Authors>R2R2HS</Authors>
 		<Company>HaikuSharp</Company>
 		<Copyright>© 2025 $(Company)</Copyright>

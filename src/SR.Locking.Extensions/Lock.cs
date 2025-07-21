@@ -3,6 +3,9 @@ using System;
 
 namespace SR.Locking.Extensions;
 
+/// <summary>
+/// Represents a scope-based lock that automatically releases when disposed.
+/// </summary>
 public readonly struct Lock : IDisposable
 {
     private readonly ILockable m_Lockable;
@@ -14,5 +17,8 @@ public readonly struct Lock : IDisposable
         m_Key = key;
     }
 
+    /// <summary>
+    /// Releases the lock by calling <see cref="ILockable.Unlock(object)"/>.
+    /// </summary>
     public void Dispose() => m_Lockable.Unlock(m_Key);
 }
