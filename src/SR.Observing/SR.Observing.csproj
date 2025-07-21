@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<ItemGroup>
+		<PackageReference Include="Sugar.Object.Extensions" Version="2.1.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\SR.Abstraction\SR.Abstraction.csproj" />
+		<ProjectReference Include="..\SR.Observing.Abstraction\SR.Observing.Abstraction.csproj" />
+	</ItemGroup>
+
+</Project>

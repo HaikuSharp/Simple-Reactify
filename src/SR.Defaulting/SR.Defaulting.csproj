@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<ItemGroup>
+		<ProjectReference Include="..\SR.Abstraction\SR.Abstraction.csproj" />
+		<ProjectReference Include="..\SR.Defaulting.Abstraction\SR.Defaulting.Abstraction.csproj" />
+	</ItemGroup>
+
+</Project>

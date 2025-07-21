@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<ItemGroup>
+		<ProjectReference Include="..\SR.Overriding.Abstraction\SR.Overriding.Abstraction.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<ItemGroup>
+		<ProjectReference Include="..\SR.Observing.Abstraction\SR.Observing.Abstraction.csproj" />
+	</ItemGroup>
+
+</Project>

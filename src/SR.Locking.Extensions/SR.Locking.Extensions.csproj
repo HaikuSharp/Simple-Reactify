@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<ItemGroup>
+		<ProjectReference Include="..\SR.Locking.Abstraction\SR.Locking.Abstraction.csproj" />
+	</ItemGroup>
+
+</Project>
