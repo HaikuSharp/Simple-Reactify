@@ -1,6 +1,6 @@
 ﻿namespace SR.Defaulting.Abstraction;
 
-public interface IDefaultable<T>
+public interface IDefaultable<out T>
 {
     T GetDefault();
 }
