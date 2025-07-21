@@ -9,13 +9,6 @@ namespace SR;
 /// <typeparam name="T">The type of value to set.</typeparam>
 public sealed class ScriptableSetter<T>(Func<T, bool> inner) : ISetter<T>
 {
-    /// <summary>
-    /// Attempts to set a value by invoking the configured delegate.
-    /// </summary>
-    /// <param name="value">The value to process.</param>
-    /// <returns>
-    /// The boolean result from the delegate function, indicating whether
-    /// the value was successfully processed.
-    /// </returns>
+    /// <inheritdoc/>
     public bool Set(T value) => inner(value);
 }

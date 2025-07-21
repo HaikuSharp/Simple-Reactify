@@ -8,17 +8,10 @@ namespace SR;
 /// <typeparam name="T">The type of the property value.</typeparam>
 public sealed class Property<T>(T value) : IProperty<T>
 {
-    /// <summary>
-    /// Gets the current stored value.
-    /// </summary>
-    /// <returns>The currently stored value.</returns>
+    /// <inheritdoc/>
     public T Get() => value;
 
-    /// <summary>
-    /// Sets a new value for the property.
-    /// </summary>
-    /// <param name="newValue">The new value to store.</param>
-    /// <returns>Always returns <c>true</c> indicating successful assignment.</returns>
+    /// <inheritdoc/>
     public bool Set(T newValue)
     {
         value = newValue;

@@ -9,13 +9,6 @@ namespace SR;
 /// <typeparam name="T">The type of value to set.</typeparam>
 public sealed class WrapSetter<T>(ISetter<T> inner) : ISetter<T>
 {
-    /// <summary>
-    /// Sets a value by delegating to the wrapped setter.
-    /// </summary>
-    /// <param name="value">The value to set.</param>
-    /// <returns>
-    /// The boolean result from the inner <see cref="ISetter{T}"/> implementation,
-    /// indicating whether the value was successfully processed.
-    /// </returns>
+    /// <inheritdoc/>
     public bool Set(T value) => inner.Set(value);
 }

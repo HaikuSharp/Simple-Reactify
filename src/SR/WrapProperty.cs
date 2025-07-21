@@ -9,21 +9,9 @@ namespace SR;
 /// <typeparam name="T">The type of the property value.</typeparam>
 public sealed class WrapProperty<T>(IProperty<T> inner) : IProperty<T>
 {
-    /// <summary>
-    /// Gets the current value by delegating to the wrapped property.
-    /// </summary>
-    /// <returns>
-    /// The value obtained from the inner <see cref="IProperty{T}"/> implementation.
-    /// </returns>
+    /// <inheritdoc/>
     public T Get() => inner.Get();
 
-    /// <summary>
-    /// Sets a new value by delegating to the wrapped property.
-    /// </summary>
-    /// <param name="value">The new value to set.</param>
-    /// <returns>
-    /// The result from the inner <see cref="IProperty{T}"/> implementation,
-    /// indicating whether the value was successfully set.
-    /// </returns>
+    /// <inheritdoc/>
     public bool Set(T value) => inner.Set(value);
 }

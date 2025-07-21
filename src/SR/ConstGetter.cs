@@ -8,11 +8,6 @@ namespace SR;
 /// <typeparam name="T">The type of the constant value.</typeparam>
 public sealed class ConstGetter<T>(T value) : IGetter<T>
 {
-    /// <summary>
-    /// Returns the constant value that was provided during construction.
-    /// </summary>
-    /// <returns>
-    /// The immutable value that this getter was initialized with.
-    /// </returns>
+    /// <inheritdoc/>
     public T Get() => value;
 }
