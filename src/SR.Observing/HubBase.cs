@@ -5,7 +5,7 @@ namespace SR.Observing;
 
 public abstract class HubBase<T> : IHub<T>
 {
-    public IPublisher<T> Publish() => throw new System.NotImplementedException();
+    public IPublisher<T> Publish() => new Publisher(this);
 
     protected abstract void Reactive(T arguments);
 
